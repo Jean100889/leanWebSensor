@@ -5,6 +5,7 @@ const producaoDisplay = document.getElementById('producaoDisplay');
 
 var urlPost = 'https://leanwebsensor-7t8c.onrender.com/chaves'
 var urlGet = 'https://leanwebsensor-7t8c.onrender.com/producao'
+var urlGet = 'https://leanwebsensor-7t8c.onrender.com/msg'
 
 function receiverRequest(){
     fetch(urlGet, {
