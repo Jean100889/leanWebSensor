@@ -6,7 +6,6 @@ const producaoDisplay = document.getElementById('producaoDisplay');
 var urlPost = 'https://leanwebsensor-7t8c.onrender.com/chaves'
 var urlGet = 'https://leanwebsensor-7t8c.onrender.com/producao'
 
-
 function receiverRequest(){
     fetch(urlGet, {
         method: 'GET',
@@ -17,6 +16,7 @@ function receiverRequest(){
     .then(response => response.json())
     .then(json => {
         producaoDisplay.textContent = json.sensor;
+        feedbackDisplay.textContent = json.msg;
         console.log(json.sensor);
     })
 }
