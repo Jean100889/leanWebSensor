@@ -16,8 +16,9 @@ function receiverRequest(){
     .then(response => response.json())
     .then(json => {
         producaoDisplay.textContent = json.sensor;
-        feedbackDisplay.textContent = json.msg;
+        producaoDisplay.textContent = json.msg;
         console.log(json.sensor);
+        console.log(json.msg);
     })
 }
 
