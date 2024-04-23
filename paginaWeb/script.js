@@ -4,8 +4,8 @@ const restartButton = document.getElementById('restartButton');
 const producaoDisplay = document.getElementById('producaoDisplay');
 const erro = document.getElementById('erro');
 
-var urlPost = 'https://leanwebsensorserver.onrender.com/chaves'
-var urlGet = 'https://leanwebsensorserver.onrender.com/producao'
+var urlPost = 'https://leanwebsensor-7t8c.onrender.com/chaves'
+var urlGet = 'https://leanwebsensor-7t8c.onrender.com/producao'
 
 sensor_old = 0;
 contaErro = 0;
