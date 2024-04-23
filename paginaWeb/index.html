@@ -1,46 +1,38 @@
-<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
-
-<html lang="en"> <!-- Início do elemento HTML com atributo lang definido como inglês -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Meta tag para definir o conjunto de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para configurar a escala inicial e a largura da viewport -->
-    <title>Controle de Máquina Industrial</title> <!-- Título da página exibido na barra de título do navegador -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS que estiliza a página -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controle de Máquina Industrial</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<div class="header"> <!-- Div que contém o cabeçalho da página -->
-    <img src="./img/logo.svg" alt="Logo"> <!-- Imagem do logo da página -->
-    <h1>IOT Senai Uberaba 2024</h1> <!-- Título principal da página -->
+<div class="header">
+    <img src="./img/logo.svg" alt="Logo">
+    <h1>IOT Senai Uberaba 2024</h1>
 </div>
 
-<div class="container"> <!-- Div que contém o conteúdo principal da página -->
-    <div class="control-panel"> <!-- Div que contém o painel de controle -->
-
-        <div class="button-container"> <!-- Div que contém os botões de controle -->
-            <div class="producao-container"> <!-- Div que contém o display de produção -->
-                <h2>Controles</h2> <!-- Título para a seção de controles -->
-                <p id="producaoDisplay">Carregando...</p> <!-- Display para mostrar a produção atual -->
+<div class="container">
+    <div class="control-panel">
+        <h2>Controles</h2>
+        <div class="button-container"> 
+            <div class="producao-container">
+                <p id="producaoDisplay">Carregando...</p>
+                <p id="erro"></p>
             </div>         
-            <button id="ligarButton" class="button green">Ligar</button> <!-- Botão para ligar -->
-            <button id="desligarButton" class="button red">Desligar</button> <!-- Botão para desligar -->
+            <button id="ligarButton" class="button green">Ligar</button>
+            <button id="desligarButton" class="button red">Desligar</button>
             <br><br>
-            <button id="restartButton" class="button yellow">Restart</button> <!-- Botão para reiniciar -->
-
-            <div class="producao-msg"> <!-- Div que contém a mensagem de status -->
-                <h2>Status: </h2> <!-- Título para a seção de status -->
-                <p id="msgDisplay">Carregando...</p> <!-- Display para mostrar o status atual -->
-            </div> 
-        </div> 
+            <button id="restartButton" class="button yellow">Restart</button>
+        </div>
     </div>
 </div>
 
-<div class="footer"> <!-- Div que contém o rodapé da página -->
-    <p>Senai Uberaba, Praça Frei Eugênio, 85 - (34) 3325-9300</p> <!-- Informações de contato do Senai Uberaba -->
+<div class="footer">
+    <p>Senai Uberaba, Praça Frei Eugênio 85 - (34) 3325-9300</p>
 </div>
-<script src="script.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica da página -->
+<script src="script.js"></script>
 
 </body>
 </html>
